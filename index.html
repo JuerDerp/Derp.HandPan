@@ -10,24 +10,15 @@
         <a-scene embedded vr-mode-ui="enabled: false;" arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
                <!-- mit folgendem code werden Mini-Marker aktiviert: detectionMode: mono_and_matrix; matrixCodeType: 3x3   --> 
                <!-- Wieder entfernt: mit folgendem code wird Kameraauflösung erhöht: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;  -->                                                                                                                                   
-                                                                                                                                         
+   
+   
         <a-assets>      
            <a-asset-item id="test-obj" src="/clapping-hands.obj"></a-asset-item>
-           <a-asset-item id="test-mtl" src="/clapping-hands.mtl"></a-asset-item>  
-                                                                                             
-                      <!--  klappt: pollen, dateien im grundverzeichnis -->    
-           <!--  <a-asset-item id="test-obj" src="/model_492380983510.obj"></a-asset-item>   -->    
-           <!--  <a-asset-item id="test-mtl" src="/model_492380983510.mtl"></a-asset-item>   -->                                                                                   
-                                                                                             
+           <a-asset-item id="test-mtl" src="/clapping-hands.mtl"></a-asset-item>                                                                                       
+                      <!--  klappt: pollen, dateien im grundverzeichnis -->                                                                                    
         </a-assets>
-                                                                
-                                                                          
-          <!--   <a-marker preset="hiro">     -->
-          <!--   Mini-Marker sind durch Zeile 9/10 aktiviert       -->                        
-                                          
-                                        
-                                        
-                                        
+                                                                                                          
+                                                           
                                        
         <a-marker arjs-anchor="type:  barcode;  barcodeValue:  1;  smooth:  true;  smoothCount:  10;  smoothThreshold:  5">                                        
             <a-box position='0 0.5 0' color="yellow"></a-box>
@@ -71,42 +62,7 @@
             </a-marker>                                     
                                                        
 
-                              
-                              
-          
-                 <a-marker arjs-anchor="type:  barcode;  barcodeValue:  4;  smooth:  true;  smoothCount:  10;  smoothThreshold:  5">                                             
-        <a-plane 
-                   position="0 -2 0"
-                   rotation="-90 0 0"
-                   width="12" height="6" 
-                   color="#FFFFFF">
-        </a-plane>   
-                 </a-marker>   
-                                  
-
-               <a-marker arjs-anchor="type:  barcode;  barcodeValue:  4;  smooth:  true;  smoothCount:  10;  smoothThreshold:  5">
-      <a-pointcloud 
-                   scale="10 10 10" 
-                   rotation="-90 0 90" 
-                   position="2 0 0" 
-                   src="/DamagedSoy-Scans-Combined.ply" 
-                   size="0.05"    
-                   animation="property: object3D.position.z; to: 2.2; dir: alternate; dur: 2000; loop: true"               
-      </a-pointcloud>  
-               </a-marker>
-                                                                                      
-
-        <a-marker arjs-anchor="type:  barcode;  barcodeValue:  4;  smooth:  true;  smoothCount:  10;  smoothThreshold:  5">
-      <a-pointcloud 
-                   scale="10 10 10" 
-                   rotation="-90 0 90" 
-                   position="-2 0 0" 
-                   src="/DamagedSoy-Scans-Combined.ply" 
-                   size="0.05"         
-      </a-pointcloud>                    
-            </a-marker>    
-                              
-                              
+                           
                               
                                                             
         <!-- </a-marker>evice movemenents -->  
